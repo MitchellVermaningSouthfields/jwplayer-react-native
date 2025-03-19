@@ -95,7 +95,7 @@ dependencies {
 
     // Cast dependencies
     if (useCast) {
-        implementation 'com.google.android.gms:play-services-cast-framework:21.3.0'
+        implementation 'com.google.android.gms:play-services-cast-framework:22.0.0'
     }
 
     // ExoPlayer dependencies
