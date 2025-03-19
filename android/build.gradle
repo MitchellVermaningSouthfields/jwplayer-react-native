@@ -89,8 +89,8 @@ dependencies {
 
     // Ad dependencies
     if (useIMA) {
-        implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.33.0'
-        implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+        implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.36.0'
+        implementation 'com.google.android.gms:play-services-ads-identifier:18.2.0'
     }
 
     // Cast dependencies
