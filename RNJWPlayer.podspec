@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "13.0", :tvos => "13.0" }
   s.source       = { :git => "https://github.com/jwplayer/jwplayer-react-native.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/RNJWPlayer/*.{h,m,swift}"
+  s.dependency   'JWPlayerKit', '4.21.3'
   s.dependency   'JWPlayerTVKit', '1.0.1'
   s.dependency   'React-Core'
   s.static_framework = true
