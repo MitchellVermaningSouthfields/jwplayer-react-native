@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = package['license']
   s.authors      = package['author']
   s.homepage     = package['homepage']
-  s.platform     = :ios, "14.0"
+  s.platforms    = { :ios => "13.0", :tvos => "13.0" }
   s.source       = { :git => "https://github.com/jwplayer/jwplayer-react-native.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/RNJWPlayer/*.{h,m,swift}"
   s.dependency   'JWPlayerKit', '4.21.3'
@@ -35,7 +35,8 @@ Pod::Spec.new do |s|
   end
   if defined?($RNJWPlayerUseGoogleIMA)
     Pod::UI.puts "RNJWPlayer: enable IMA SDK"
-    s.dependency 'GoogleAds-IMA-iOS-SDK', '3.22.1'
+    s.ios.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.22.1'
+    s.tvos.dependency 'GoogleAds-IMA-tvOS-SDK', '~> 4.2'
     s.pod_target_xcconfig = {
       'OTHER_SWIFT_FLAGS' => '$(inherited) -D USE_GOOGLE_IMA'
     }
